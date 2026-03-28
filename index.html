@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyBuddy — Your Academic Companion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Home.css" />
+</head>
+<body>
+
+  <!-- GRAIN OVERLAY -->
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-star">✦</span>
+        Study<em>Buddy</em>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#testimonials">Reviews</a>
+      </nav>
+      <a href="index.html" class="nav-cta">Open App →</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features" class="mob-link">Features</a>
+      <a href="#how" class="mob-link">How it works</a>
+      <a href="#testimonials" class="mob-link">Reviews</a>
+      <a href="index.html" class="mob-cta">Open App →</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+      <div class="blob b4"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span> Free · No sign-up needed
+        </div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          The study<br />companion<br /><em>you deserve.</em>
+        </h1>
+        <p class="hero-desc reveal reveal-delay-2">
+          Track assignments, beat deadlines, and capture every idea — all in one beautifully organised workspace designed for students who mean business.
+        </p>
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="index.html" class="btn-hero">Get Started Free</a>
+          <a href="#how" class="btn-ghost">See how it works ↓</a>
+        </div>
+        <div class="hero-social-proof reveal reveal-delay-4">
+          <div class="avatars">
+            <img src="https://i.pravatar.cc/36?img=11" alt="" />
+            <img src="https://i.pravatar.cc/36?img=32" alt="" />
+            <img src="https://i.pravatar.cc/36?img=47" alt="" />
+            <img src="https://i.pravatar.cc/36?img=58" alt="" />
+          </div>
+          <p>Loved by <strong>12,000+</strong> students worldwide</p>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="app-preview">
+          <div class="preview-topbar">
+            <div class="preview-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="preview-tabs">
+              <span class="ptab active">📋 Assignments</span>
+              <span class="ptab">📝 Notes</span>
+            </div>
+          </div>
+          <div class="preview-body">
+            <div class="preview-card high">
+              <div class="pc-top">
+                <span class="pc-title">Essay on World War II</span>
+                <span class="pc-badge high">High</span>
+              </div>
+              <span class="pc-sub">📚 History</span>
+              <span class="pc-due overdue">⚠️ Due Today</span>
+              <div class="pc-actions">
+                <button>✓ Mark Done</button>
+                <button>🗑 Delete</button>
+              </div>
+            </div>
+            <div class="preview-card medium">
+              <div class="pc-top">
+                <span class="pc-title">Calculus Problem Set 3</span>
+                <span class="pc-badge medium">Medium</span>
+              </div>
+              <span class="pc-sub">📚 Mathematics</span>
+              <span class="pc-due">📅 In 3 days</span>
+              <div class="pc-actions">
+                <button>✓ Mark Done</button>
+                <button>🗑 Delete</button>
+              </div>
+            </div>
+            <div class="preview-card low done-card">
+              <div class="pc-top">
+                <span class="pc-title done-title">Read Chapter 5</span>
+                <span class="pc-badge low">Low</span>
+              </div>
+              <span class="pc-sub">📚 Biology</span>
+              <span class="pc-due">📅 Completed ✓</span>
+            </div>
+          </div>
+          <!-- floating note -->
+          <div class="floating-note">
+            <p class="fn-title">French Revolution Key Dates</p>
+            <p class="fn-tag">History</p>
+            <p class="fn-body">1789 — Storming of the Bastille<br/>1804 — Napoleon crowned</p>
+          </div>
+          <!-- floating stat -->
+          <div class="floating-stat">
+            <p class="fs-num">67%</p>
+            <p class="fs-label">Completed</p>
+            <div class="fs-bar"><div class="fs-fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Assignments</span><span class="dot">✦</span>
+      <span>Deadlines</span><span class="dot">✦</span>
+      <span>Notes</span><span class="dot">✦</span>
+      <span>Study Streaks</span><span class="dot">✦</span>
+      <span>Progress Tracking</span><span class="dot">✦</span>
+      <span>Subject Organisation</span><span class="dot">✦</span>
+      <span>Assignments</span><span class="dot">✦</span>
+      <span>Deadlines</span><span class="dot">✦</span>
+      <span>Notes</span><span class="dot">✦</span>
+      <span>Study Streaks</span><span class="dot">✦</span>
+      <span>Progress Tracking</span><span class="dot">✦</span>
+      <span>Subject Organisation</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label reveal">What we do</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Every tool a student<br /><em>actually needs.</em>
+      </h2>
+
+      <div class="features-grid">
+
+        <div class="feat-card large reveal">
+          <div class="feat-icon">📋</div>
+          <h3>Assignment Tracker</h3>
+          <p>Never miss a deadline again. Log tasks with subject, priority level, due date, and personal notes. Filter by status and sort by urgency — all at a glance.</p>
+          <div class="feat-tags">
+            <span>Priority levels</span><span>Due dates</span><span>Filters</span>
+          </div>
+        </div>
+
+        <div class="feat-card reveal reveal-delay-1">
+          <div class="feat-icon">📝</div>
+          <h3>Notes Board</h3>
+          <p>A colourful masonry board for capturing ideas, lecture summaries, formulas — anything your brain needs to hold onto.</p>
+          <div class="feat-tags">
+            <span>Colour coded</span><span>Subject tags</span>
+          </div>
+        </div>
+
+        <div class="feat-card reveal reveal-delay-2">
+          <div class="feat-icon">🗂</div>
+          <h3>Overview Dashboard</h3>
+          <p>See your progress, upcoming deadlines and completion rate at a glance. A bird's-eye view of your academic life.</p>
+          <div class="feat-tags">
+            <span>Stats</span><span>Progress bar</span>
+          </div>
+        </div>
+
+        <div class="feat-card reveal reveal-delay-1">
+          <div class="feat-icon">🔥</div>
+          <h3>Study Streaks</h3>
+          <p>Build consistent study habits with daily streak tracking. Show up every day and watch your streak climb.</p>
+          <div class="feat-tags">
+            <span>Daily tracking</span><span>Habit building</span>
+          </div>
+        </div>
+
+        <div class="feat-card large reveal reveal-delay-2">
+          <div class="feat-icon">💾</div>
+          <h3>Works Offline. Zero Sign-up.</h3>
+          <p>Everything saves locally to your browser — no account, no cloud, no privacy concerns. Just open the app and go. Your data stays yours, always, on every device you use it on.</p>
+          <div class="feat-tags">
+            <span>LocalStorage</span><span>No account</span><span>Private</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-label reveal">The process</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Up and running<br /><em>in seconds.</em>
+      </h2>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Open the app</h3>
+            <p>No download, no sign-up. Click "Get Started Free" and you're in. StudyBuddy loads instantly in your browser.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step reveal reveal-delay-1">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Add your assignments</h3>
+            <p>Hit "+ New Assignment", fill in the details — title, subject, priority, due date — and save. Done in under 15 seconds.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step reveal reveal-delay-2">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Stay on top</h3>
+            <p>Use the Overview dashboard to see what's urgent, check off completed tasks, and build your daily study streak.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-label reveal">Real students</div>
+      <h2 class="section-title reveal reveal-delay-1">
+        What they're<br /><em>saying.</em>
+      </h2>
+
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"I went from barely submitting on time to finishing two days early. StudyBuddy completely changed how I manage my semester."</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/40?img=47" alt="" />
+            <div>
+              <p class="author-name">Amara Osei</p>
+              <p class="author-role">Year 3 · Computer Science</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card featured reveal reveal-delay-1">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"The notes board is everything. I have all my lecture summaries colour-coded by subject. My grades went up a whole letter in one semester."</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/40?img=32" alt="" />
+            <div>
+              <p class="author-name">Sofia Martínez</p>
+              <p class="author-role">Year 2 · Pre-Med</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal reveal-delay-2">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"No login, no subscription — it just works. The study streak kept me accountable for 30 days straight. Highly recommend."</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/40?img=11" alt="" />
+            <div>
+              <p class="author-name">Kwame Asante</p>
+              <p class="author-role">Year 1 · Law</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal reveal-delay-1">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"I love that everything stays in my browser. No data leaving my device. Perfect for someone who cares about privacy."</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/40?img=58" alt="" />
+            <div>
+              <p class="author-name">Yuki Tanaka</p>
+              <p class="author-role">Masters · Data Science</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-section">
+    <div class="cta-blobs">
+      <div class="cta-blob cb1"></div>
+      <div class="cta-blob cb2"></div>
+    </div>
+    <div class="container cta-inner">
+      <div class="reveal">
+        <p class="cta-eyebrow">Ready to level up?</p>
+        <h2 class="cta-title">Start studying<br /><em>smarter today.</em></h2>
+        <p class="cta-sub">Free forever. No account. No nonsense.</p>
+        <a href="index.html" class="btn-cta">Open StudyBuddy →</a>
+      </div>
+      <div class="cta-decoration reveal reveal-delay-1">
+        <div class="cta-ring r1"></div>
+        <div class="cta-ring r2"></div>
+        <div class="cta-star">✦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-star">✦</span> Study<em>Buddy</em>
+      </div>
+      <p class="footer-copy">Built with ♥ for students everywhere. © 2026 StudyBuddy.</p>
+      <div class="footer-links">
+        <a href="index.html">Open App</a>
+        <a href="#features">Features</a>
+        <a href="#testimonials">Reviews</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Home.js"></script>
+</body>
+</html>
